@@ -1,0 +1,9 @@
+@import "@assets/scss/variables/colors/colors";
+
+@mixin text-color {
+    @each $name, $value in $colors {
+        .text-#{$name} {
+            color: #{$value} !important;
+        }
+    }
+}
